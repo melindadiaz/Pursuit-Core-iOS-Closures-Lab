@@ -6,7 +6,7 @@ import UIKit
 
 // Your function here
 func applyKTimes(_ K: Int, closure: (()->()) ) {
-//    return(applyKTimes())
+    //    return(applyKTimes())
 }
 var applyKTimesClosure = {() -> () in
     
@@ -95,8 +95,8 @@ assert(outputFour.elementsEqual(expectedOutputFour, by: { $0 == $1 }), "Expected
 // Write a function called sumOfSquaresOfOddNumbers(in:) that returns the sum of the squares of all the odd numbers from an array of Ints.  Use filter, map and reduce in your function.
 
 func sumOfSquaresOfOddNumbers(in arr: Array<Int>) -> Int {
-         return arr.filter({$0 % 2 == 1}).map{$0 * $0}.reduce(0, +)
-     }
+    return arr.filter({$0 % 2 == 1}).map{$0 * $0}.reduce(0, +)
+}
 
 let evenMoreNumbers = [1, 2, 3, 4, 5, 6]
 let expectedOutputFive = 35 // Explanation: 1 + 9 + 25 -> 35
